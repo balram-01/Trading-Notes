@@ -1,0 +1,631 @@
+# 📖 Balram's Trading Playbook v1.0
+### (100-Trade Validation Plan)
+
+---
+
+# IMPORTANT
+
+This playbook is **NOT** designed to predict the market.
+
+Its only purpose is to answer one question:
+
+> **Does this strategy have a positive expectancy over 100 trades?**
+
+For the next **100 backtested trades**:
+
+- ❌ No changing rules
+- ❌ No adding new ICT concepts
+- ❌ No changing timeframe
+- ❌ No changing entry style
+- ❌ No changing SL style
+- ❌ No changing TP style
+
+Your only job is:
+
+> Execute the playbook exactly.
+
+After 100 trades, improve ONE rule using data.
+
+---
+
+# Trading Universe
+
+Instrument
+
+• XAUUSD (Gold)
+
+No other instruments until 100 trades are completed.
+
+---
+
+# Timeframes
+
+4H → Macro Context
+
+↓
+
+1H → Trading Bias / Market State
+
+↓
+
+15M → POI
+
+↓
+
+5M → Execution
+
+---
+
+# Daily Workflow
+
+Every trading day follow this order.
+
+Never skip steps.
+
+Never jump ahead.
+
+---
+
+# STEP 1 — Macro Context (4H)
+
+Determine one of these market states.
+
+### A. Bullish Trend
+
+Requirements
+
+• HH
+• HL
+
+Action
+
+Only look for BUYS.
+
+---
+
+### B. Bearish Trend
+
+Requirements
+
+• LH
+• LL
+
+Action
+
+Only look for SELLS.
+
+---
+
+### C. Consolidation
+
+Requirements
+
+Price moving sideways.
+
+No clean HH-HL or LH-LL sequence.
+
+Action
+
+Mark:
+
+Range High
+
+Range Low
+
+Premium
+
+Discount
+
+Equilibrium
+
+---
+
+# STEP 2 — Market Condition Rules
+
+## CASE 1
+
+4H Trending
+
+↓
+
+1H Trending Same Direction
+
+Action
+
+Normal trading allowed.
+
+Highest probability.
+
+---
+
+## CASE 2
+
+4H Trending
+
+↓
+
+1H Pullback / Consolidation
+
+Action
+
+Wait.
+
+Do NOT trade inside the pullback.
+
+Wait for:
+
+• Breakout
+
+OR
+
+Price reaches HTF POI.
+
+Then continue.
+
+---
+
+## CASE 3
+
+4H Consolidating
+
+Action
+
+Trade ONLY from:
+
+Range High
+
+OR
+
+Range Low
+
+Never trade Equilibrium.
+
+---
+
+## CASE 4
+
+4H Consolidation
+
+↓
+
+1H Consolidation
+
+Action
+
+NO TRADE.
+
+---
+
+# STEP 3 — Trading Bias (1H)
+
+Questions
+
+Who owns external structure?
+
+Bullish
+
+Bearish
+
+Range
+
+If unsure
+
+NO TRADE.
+
+---
+
+# STEP 4 — Premium / Discount
+
+If Bullish
+
+Only buy Discount.
+
+Never buy Premium.
+
+---
+
+If Bearish
+
+Only sell Premium.
+
+Never sell Discount.
+
+---
+
+If Range
+
+Buy only Discount.
+
+Sell only Premium.
+
+Never trade Equilibrium.
+
+---
+
+# STEP 5 — POI Selection (15M)
+
+Allowed POIs
+
+✅ Fresh Order Block
+
+✅ Fresh Supply Zone
+
+✅ Fresh Demand Zone
+
+✅ Fresh Fair Value Gap
+
+Not Fresh?
+
+Ignore.
+
+Already Mitigated?
+
+Ignore.
+
+Middle of nowhere?
+
+Ignore.
+
+---
+
+# STEP 6 — Wait
+
+Do absolutely nothing until price reaches the POI.
+
+No anticipation.
+
+No guessing.
+
+No limit entries before reaction.
+
+---
+
+# STEP 7 — Reaction (5M)
+
+Once price reaches POI
+
+Observe only.
+
+Do not enter.
+
+---
+
+Need evidence.
+
+Examples
+
+• Strong rejection
+
+• Strong displacement
+
+If nothing happens
+
+NO TRADE.
+
+---
+
+# STEP 8 — Confirmation
+
+Need
+
+✅ Strong Displacement
+
+AND
+
+✅ BOS or MSS
+
+No BOS?
+
+No Trade.
+
+No Displacement?
+
+No Trade.
+
+---
+
+# STEP 9 — Evaluate Retracement
+
+GOOD Retracement
+
+• Slow
+
+• Small candles
+
+• Overlapping candles
+
+• Multiple wicks
+
+• Looks weak
+
+BAD Retracement
+
+• Large opposite candles
+
+• Strong momentum
+
+• Consecutive displacement
+
+• Looks aggressive
+
+Good
+
+↓
+
+Continue.
+
+Bad
+
+↓
+
+No Trade.
+
+---
+
+# STEP 10 — Entry Trigger
+
+Allowed Triggers
+
+• Engulfing candle
+
+OR
+
+• Fresh displacement candle
+
+OR
+
+• BOS after retracement
+
+First trigger
+
+↓
+
+Enter.
+
+No trigger
+
+↓
+
+No Trade.
+
+---
+
+# STEP 11 — Stop Loss
+
+Place SL
+
+Above retracement high
+
+(SELL)
+
+Below retracement low
+
+(BUY)
+
+If SL becomes too large
+
+Skip trade.
+
+Never force it.
+
+---
+
+# STEP 12 — Take Profit
+
+Target
+
+Nearest meaningful liquidity
+
+Examples
+
+• Swing High
+
+• Swing Low
+
+• Equal High
+
+• Equal Low
+
+• PDH
+
+• PDL
+
+Minimum RR
+
+2R
+
+If less than 2R
+
+Skip trade.
+
+---
+
+# Trade Management
+
+Backtesting
+
+Set & Forget.
+
+No partials.
+
+No moving SL.
+
+No moving TP.
+
+---
+
+# Trade Filters
+
+Skip if
+
+❌ No HTF bias
+
+❌ Equilibrium
+
+❌ Poor POI
+
+❌ No displacement
+
+❌ No BOS/MSS
+
+❌ Aggressive retracement
+
+❌ RR below 2
+
+❌ Trading because bored
+
+---
+
+# Things NEVER To Do
+
+Never chase price.
+
+Never average down.
+
+Never move SL further.
+
+Never revenge trade.
+
+Never take random entries.
+
+Never enter because you "feel."
+
+Never trade middle of range.
+
+Never trade without confirmation.
+
+---
+
+# Allowed Emotions
+
+None.
+
+Only follow checklist.
+
+---
+
+# End of Trade
+
+Record
+
+HTF Bias
+
+Market State
+
+POI
+
+Liquidity
+
+Displacement
+
+BOS
+
+Retracement Quality
+
+Entry Trigger
+
+SL
+
+TP
+
+RR
+
+Result
+
+Lesson
+
+---
+
+# Weekly Review
+
+Every 20 trades
+
+Calculate
+
+Win Rate
+
+Average R
+
+Profit Factor
+
+Best Session
+
+Worst Session
+
+Best POI
+
+Worst POI
+
+Best Trigger
+
+Worst Trigger
+
+Most Common Mistake
+
+Do NOT change strategy.
+
+Only collect evidence.
+
+---
+
+# After 100 Trades
+
+Now answer
+
+Does liquidity sweep improve results?
+
+Does weak retracement improve results?
+
+Which POI wins most?
+
+Which session wins most?
+
+Which trigger wins most?
+
+What causes most losses?
+
+Only AFTER answering these questions may the strategy be modified.
+
+---
+
+# The Trader's Oath
+
+I will not judge my strategy after one trade.
+
+I will not change rules because of one loss.
+
+I will not become overconfident because of one win.
+
+I will trust data more than emotions.
+
+I will execute this playbook exactly for 100 trades.
+
+My goal is not to predict the market.
+
+My goal is to become a consistently disciplined trader.
+
+---
+
+# Mission
+
+For the next 100 trades:
+
+One Instrument.
+
+One Strategy.
+
+One Playbook.
+
+One Journal.
+
+No distractions.
+
+No strategy hopping.
+
+No new concepts.
+
+Only execution.
+
+After 100 trades,
+
+let the statistics decide what stays and what changes.
