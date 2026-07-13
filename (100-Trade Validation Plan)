@@ -1,631 +1,273 @@
-# 📖 Balram's Trading Playbook v1.0
-### (100-Trade Validation Plan)
+# 📖 Balram's Trading Playbook v2.0
+### *100-Trade Validation Plan*
 
 ---
 
-# IMPORTANT
+## 🎯 Objective
 
-This playbook is **NOT** designed to predict the market.
+The purpose of this playbook is **not** to predict every move.
 
-Its only purpose is to answer one question:
+> **The purpose is to determine whether one repeatable setup has a positive expectancy over 100 trades.**
 
-> **Does this strategy have a positive expectancy over 100 trades?**
+During these 100 trades:
 
-For the next **100 backtested trades**:
+- ❌ No strategy hopping
+- ❌ No adding new concepts
+- ❌ No changing timeframes
+- ❌ No changing risk management
+- ❌ No changing entry logic
 
-- ❌ No changing rules
-- ❌ No adding new ICT concepts
-- ❌ No changing timeframe
-- ❌ No changing entry style
-- ❌ No changing SL style
-- ❌ No changing TP style
-
-Your only job is:
-
-> Execute the playbook exactly.
-
-After 100 trades, improve ONE rule using data.
+**Only collect data.**
 
 ---
 
-# Trading Universe
+## 🪙 Trading Universe
 
-Instrument
+**Instrument:** XAUUSD (Gold)
 
-• XAUUSD (Gold)
+> Trade only Gold until 100 trades are complete.
 
-No other instruments until 100 trades are completed.
+### Timeframe Roles
 
----
-
-# Timeframes
-
-4H → Macro Context
-
-↓
-
-1H → Trading Bias / Market State
-
-↓
-
-15M → POI
-
-↓
-
-5M → Execution
+| Timeframe | Purpose |
+|:---:|:---|
+| **4H** | Market Context (HTF) |
+| **15M** | Confirmation |
+| **5M** | Execution |
 
 ---
 
-# Daily Workflow
+## STEP 1 — 4H Context
 
-Every trading day follow this order.
+Before every trading session, answer:
 
-Never skip steps.
+**Market Bias**
+- Bullish
+- Bearish
+- Range
 
-Never jump ahead.
+> If the answer is unclear → **No Trade**
 
----
+**Mark:**
+- HTF Order Blocks
+- HTF FVGs
+- HTF Supply/Demand
+- Premium / Discount
+- External Liquidity Targets
 
-# STEP 1 — Macro Context (4H)
-
-Determine one of these market states.
-
-### A. Bullish Trend
-
-Requirements
-
-• HH
-• HL
-
-Action
-
-Only look for BUYS.
+*This creates your map.* **No entries on 4H.**
 
 ---
 
-### B. Bearish Trend
+## STEP 2 — Wait for Price
 
-Requirements
+Once your HTF POIs are marked:
 
-• LH
-• LL
+**Do nothing.**
 
-Action
-
-Only look for SELLS.
-
----
-
-### C. Consolidation
-
-Requirements
-
-Price moving sideways.
-
-No clean HH-HL or LH-LL sequence.
-
-Action
-
-Mark:
-
-Range High
-
-Range Low
-
-Premium
-
-Discount
-
-Equilibrium
+- Wait for price to reach one of your marked HTF areas
+- Set alerts if possible
+- No anticipation
 
 ---
 
-# STEP 2 — Market Condition Rules
+## STEP 3 — 15M Confirmation
 
-## CASE 1
+When price reaches the HTF POI, switch to the **15M**.
 
-4H Trending
+Look for evidence that the market is reacting.
 
-↓
+**Preferred confirmations:**
+- Strong displacement
+- MSS/BOS
+- Fresh execution OB
+- Fresh execution FVG
 
-1H Trending Same Direction
+*A liquidity sweep is preferred but not mandatory.*
 
-Action
-
-Normal trading allowed.
-
-Highest probability.
-
----
-
-## CASE 2
-
-4H Trending
-
-↓
-
-1H Pullback / Consolidation
-
-Action
-
-Wait.
-
-Do NOT trade inside the pullback.
-
-Wait for:
-
-• Breakout
-
-OR
-
-Price reaches HTF POI.
-
-Then continue.
+> If there is no evidence, there is no trade.
 
 ---
 
-## CASE 3
+## STEP 4 — 5M Execution
 
-4H Consolidating
+Once the 15M confirms, use the **5M** only to improve execution.
 
-Action
+**Look for:**
+- Retracement into the 15M OB/FVG
+- Small stop loss
+- Clean entry
 
-Trade ONLY from:
-
-Range High
-
-OR
-
-Range Low
-
-Never trade Equilibrium.
+> ⚠️ Do not use the 5M to determine overall market bias.
 
 ---
 
-## CASE 4
+## STEP 5 — Retracement Quality
 
-4H Consolidation
+Only enter on **weak retracements**.
 
-↓
-
-1H Consolidation
-
-Action
-
-NO TRADE.
-
----
-
-# STEP 3 — Trading Bias (1H)
-
-Questions
-
-Who owns external structure?
-
-Bullish
-
-Bearish
-
-Range
-
-If unsure
-
-NO TRADE.
+| ✅ Good Retracement | ❌ Avoid |
+|:---|:---|
+| Small candles | Large opposite candles |
+| Overlapping candles | Strong opposite displacement |
+| Multiple wicks | Aggressive momentum |
+| Slow movement | |
 
 ---
 
-# STEP 4 — Premium / Discount
+## STEP 6 — Entry Trigger
 
-If Bullish
+**Allowed entry triggers:**
+- Bullish/Bearish engulfing
+- Fresh displacement candle
+- BOS after retracement
 
-Only buy Discount.
-
-Never buy Premium.
-
----
-
-If Bearish
-
-Only sell Premium.
-
-Never sell Discount.
+> Enter only after confirmation.
 
 ---
 
-If Range
+## STEP 7 — Stop Loss
 
-Buy only Discount.
+Place the stop beyond the structure that invalidates your setup:
 
-Sell only Premium.
+- **Buy** → Below the retracement low
+- **Sell** → Above the retracement high
 
-Never trade Equilibrium.
-
----
-
-# STEP 5 — POI Selection (15M)
-
-Allowed POIs
-
-✅ Fresh Order Block
-
-✅ Fresh Supply Zone
-
-✅ Fresh Demand Zone
-
-✅ Fresh Fair Value Gap
-
-Not Fresh?
-
-Ignore.
-
-Already Mitigated?
-
-Ignore.
-
-Middle of nowhere?
-
-Ignore.
+> If the stop is too large for your plan → **Skip the trade.**
 
 ---
 
-# STEP 6 — Wait
+## STEP 8 — Take Profit
 
-Do absolutely nothing until price reaches the POI.
+Target the next logical liquidity:
 
-No anticipation.
+- Swing High / Swing Low
+- Equal High / Equal Low
+- Previous Day High / Low
+- Major HTF liquidity
 
-No guessing.
-
-No limit entries before reaction.
-
----
-
-# STEP 7 — Reaction (5M)
-
-Once price reaches POI
-
-Observe only.
-
-Do not enter.
+**Minimum Reward:** 2R
+**Prefer:** 3R or more
 
 ---
 
-Need evidence.
-
-Examples
-
-• Strong rejection
-
-• Strong displacement
-
-If nothing happens
-
-NO TRADE.
-
----
-
-# STEP 8 — Confirmation
-
-Need
-
-✅ Strong Displacement
-
-AND
-
-✅ BOS or MSS
-
-No BOS?
-
-No Trade.
-
-No Displacement?
-
-No Trade.
-
----
-
-# STEP 9 — Evaluate Retracement
-
-GOOD Retracement
-
-• Slow
-
-• Small candles
-
-• Overlapping candles
-
-• Multiple wicks
-
-• Looks weak
-
-BAD Retracement
-
-• Large opposite candles
-
-• Strong momentum
-
-• Consecutive displacement
-
-• Looks aggressive
-
-Good
-
-↓
-
-Continue.
-
-Bad
-
-↓
-
-No Trade.
-
----
-
-# STEP 10 — Entry Trigger
-
-Allowed Triggers
-
-• Engulfing candle
-
-OR
-
-• Fresh displacement candle
-
-OR
-
-• BOS after retracement
-
-First trigger
-
-↓
-
-Enter.
-
-No trigger
-
-↓
-
-No Trade.
-
----
-
-# STEP 11 — Stop Loss
-
-Place SL
-
-Above retracement high
-
-(SELL)
-
-Below retracement low
-
-(BUY)
-
-If SL becomes too large
-
-Skip trade.
-
-Never force it.
-
----
-
-# STEP 12 — Take Profit
-
-Target
-
-Nearest meaningful liquidity
-
-Examples
-
-• Swing High
-
-• Swing Low
-
-• Equal High
-
-• Equal Low
-
-• PDH
-
-• PDL
-
-Minimum RR
-
-2R
-
-If less than 2R
-
-Skip trade.
-
----
-
-# Trade Management
-
-Backtesting
-
-Set & Forget.
-
-No partials.
-
-No moving SL.
-
-No moving TP.
-
----
-
-# Trade Filters
-
-Skip if
-
-❌ No HTF bias
-
-❌ Equilibrium
-
-❌ Poor POI
-
-❌ No displacement
-
-❌ No BOS/MSS
-
-❌ Aggressive retracement
-
-❌ RR below 2
-
-❌ Trading because bored
-
----
-
-# Things NEVER To Do
-
-Never chase price.
-
-Never average down.
-
-Never move SL further.
-
-Never revenge trade.
-
-Never take random entries.
-
-Never enter because you "feel."
-
-Never trade middle of range.
-
-Never trade without confirmation.
-
----
-
-# Allowed Emotions
-
-None.
-
-Only follow checklist.
-
----
-
-# End of Trade
-
-Record
-
-HTF Bias
-
-Market State
-
-POI
-
-Liquidity
-
+## 🔑 Primary Setup (S1)
+
+*This is the only setup you will actively trade for the first 100 trades.*
+
+```
+4H HTF POI
+    ↓
+15M Reaction
+    ↓
 Displacement
+    ↓
+MSS/BOS
+    ↓
+Execution OB/FVG Forms
+    ↓
+5M Retracement
+    ↓
+Entry
+```
 
-BOS
-
-Retracement Quality
-
-Entry Trigger
-
-SL
-
-TP
-
-RR
-
-Result
-
-Lesson
+*A liquidity sweep may strengthen the setup but is not required.*
 
 ---
 
-# Weekly Review
+## 🚫 Trade Filters
 
-Every 20 trades
+**Skip the trade if:**
 
-Calculate
-
-Win Rate
-
-Average R
-
-Profit Factor
-
-Best Session
-
-Worst Session
-
-Best POI
-
-Worst POI
-
-Best Trigger
-
-Worst Trigger
-
-Most Common Mistake
-
-Do NOT change strategy.
-
-Only collect evidence.
+- [ ] No clear HTF bias
+- [ ] Price is in the middle of nowhere
+- [ ] No reaction from the HTF POI
+- [ ] No displacement
+- [ ] No MSS/BOS
+- [ ] Aggressive retracement
+- [ ] Reward less than 2R
+- [ ] You're forcing a trade out of boredom
 
 ---
 
-# After 100 Trades
+## ⛔ Things Never To Do
 
-Now answer
-
-Does liquidity sweep improve results?
-
-Does weak retracement improve results?
-
-Which POI wins most?
-
-Which session wins most?
-
-Which trigger wins most?
-
-What causes most losses?
-
-Only AFTER answering these questions may the strategy be modified.
+1. Chase price
+2. Move your stop further away
+3. Average into losers
+4. Revenge trade
+5. Enter without confirmation
+6. Trade against your HTF bias
 
 ---
 
-# The Trader's Oath
+## 📓 Journal Every Trade
 
-I will not judge my strategy after one trade.
+Record the following for each trade:
 
-I will not change rules because of one loss.
-
-I will not become overconfident because of one win.
-
-I will trust data more than emotions.
-
-I will execute this playbook exactly for 100 trades.
-
-My goal is not to predict the market.
-
-My goal is to become a consistently disciplined trader.
+| Field | Field |
+|:---|:---|
+| Date | Retracement Quality (Weak/Strong) |
+| Session | Entry Trigger |
+| HTF Bias | Stop Loss |
+| HTF POI | Take Profit |
+| Premium / Discount | RR |
+| Liquidity Sweep (Yes/No) | Result (Win/Loss) |
+| Displacement (Yes/No) | R Multiple |
+| MSS/BOS (Yes/No) | Screenshot (Before & After) |
+| Execution OB/FVG | Lesson Learned |
 
 ---
 
-# Mission
+## 📊 Weekly Review *(Every 20 Trades)*
 
-For the next 100 trades:
+**Calculate:**
+- Win Rate
+- Average R
+- Profit Factor
+- Best Trading Session
+- Best HTF POI
+- Best Entry Trigger
+- Most Common Mistake
 
-One Instrument.
+> **Do not change your strategy. Just gather evidence.**
 
-One Strategy.
+---
 
-One Playbook.
+## 🏁 After 100 Trades
 
-One Journal.
+Only then ask questions like:
 
-No distractions.
+- Does a liquidity sweep improve performance?
+- Do weak retracements outperform strong ones?
+- Which HTF POI works best?
+- Which session performs best?
+- Which entry trigger is most reliable?
+- What causes most losing trades?
 
-No strategy hopping.
+> Use your own statistics to refine the strategy.
 
-No new concepts.
+---
 
-Only execution.
+## 🤝 Trader's Oath
 
-After 100 trades,
+> I will not judge my strategy after one trade.
+>
+> I will not change my rules after one loss.
+>
+> I will not become overconfident after one win.
+>
+> I will trust data more than emotions.
+>
+> I will execute this playbook consistently for 100 trades.
+>
+> My goal is not to predict the market.
+>
+> My goal is to execute my edge with discipline.
 
-let the statistics decide what stays and what changes.
+---
+
+## ✨ Core Philosophy
+
+> ### One Instrument. One Primary Setup (S1). One Journal. One Playbook.
+> ### Let statistics — not emotions — decide what changes after 100 trades.
