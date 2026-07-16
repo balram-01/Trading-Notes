@@ -350,3 +350,4 @@ Trade **with** the existing momentum instead of fighting against it.
 -  Analyze Doji candles and observe what happened after confirmation.
     
 -  Before every trade, evaluate the **market context** before considering any candlestick pattern.
+-  <img width="1480" height="832" alt="Image" src="https://github.com/user-attachments/assets/38d9609c-cb48-408a-b883-f333eb655021" />
